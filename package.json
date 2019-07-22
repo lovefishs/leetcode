@@ -1,0 +1,23 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "leetcode repo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "leetcode"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lovefishs/leetcode"
+  },
+  "author": "changming.huang@woqutech.com",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "3.5.3"
+  },
+  "dependencies": {}
+}
