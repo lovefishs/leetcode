@@ -1,17 +1,19 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "allowJs": true,
+    "rootDir": "./src/javascript",
+    "outDir": "./dist",
+    // "checkJs": true,
+    // "allowJs": true,
     "sourceMap": false,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "module": "commonjs",
-    "target": "es6",
+    "target": "ES6",
     "jsx": "react",
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    // "declaration": true,
+    // "declarationDir": "./dist/typings",
+    "baseUrl": "./src/",
+    "paths": {}
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/javascript/**/*.ts"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
 }
