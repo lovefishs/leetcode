@@ -1,5 +1,5 @@
-import LinkedListNode from './LinkedListNode'
-import { cloneDeep } from './util'
+import LinkedListNode from '../util/LinkedListNode'
+import cloneDeep from '../util/cloneDeep'
 
 /**
  * @param {ListNode} head
