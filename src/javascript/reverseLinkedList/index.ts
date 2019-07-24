@@ -17,6 +17,8 @@ const main = (arr: any[] = [], type = 'iterative') => {
   console.log('arr', arr)
   console.log('reverseArr', reverseArr)
   console.log('')
+
+  return reverseArr
 }
 
 main([1, 2, 3, 4, 5])
