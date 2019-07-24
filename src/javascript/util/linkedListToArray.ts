@@ -1,9 +1,9 @@
-import LinkedListNode from './LinkedListNode'
+import SinglyLinkedListNode from '../struct/SinglyLinkedListNode'
 
-const linkedListToArray = (head: LinkedListNode): any[] => {
+const linkedListToArray = (head: SinglyLinkedListNode): any[] => {
   const arr = []
 
-  let curr: LinkedListNode = head
+  let curr: SinglyLinkedListNode = head
 
   while (curr) {
     arr.push(curr.val)

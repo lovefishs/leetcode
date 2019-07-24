@@ -1,4 +1,4 @@
-import LinkedListNode from '../util/LinkedListNode'
+import SinglyLinkedListNode from '../struct/SinglyLinkedListNode'
 import arrayToLinkedList from '../util/arrayToLinkedList'
 import linkedListToArray from '../util/linkedListToArray'
 
@@ -7,8 +7,8 @@ import recursive from './recursive'
 
 const main = (arr: any[] = [], type = 'iterative') => {
   const reverseList = type === 'iterative' ? iterative : recursive
-  const head: LinkedListNode = arrayToLinkedList(arr)
-  const reverseHead: LinkedListNode = reverseList(head)
+  const head: SinglyLinkedListNode = arrayToLinkedList(arr)
+  const reverseHead: SinglyLinkedListNode = reverseList(head)
   const reverseArr: any[] = linkedListToArray(reverseHead)
 
   console.log(`----------${type}----------`)

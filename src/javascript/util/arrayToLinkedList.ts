@@ -1,16 +1,16 @@
-import LinkedListNode from './LinkedListNode'
+import SinglyLinkedListNode from '../struct/SinglyLinkedListNode'
 
-const arrayToLinkedList = (arr: any[]): LinkedListNode => {
+const arrayToLinkedList = (arr: any[]): SinglyLinkedListNode => {
   if (arr.length === 0) {
-    return new LinkedListNode(null)
+    return new SinglyLinkedListNode(null)
   }
 
-  const head: LinkedListNode = new LinkedListNode(arr[0])
+  const head: SinglyLinkedListNode = new SinglyLinkedListNode(arr[0])
   let curr = head
   let index = 1
 
   while (arr[index]) {
-    curr.next = new LinkedListNode(arr[index])
+    curr.next = new SinglyLinkedListNode(arr[index])
     curr = curr.next
     index++
   }

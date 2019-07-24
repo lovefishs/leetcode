@@ -1,11 +1,11 @@
-import LinkedListNode from '../util/LinkedListNode'
+import SinglyLinkedListNode from '../struct/SinglyLinkedListNode'
 import cloneDeep from '../util/cloneDeep'
 
 /**
- * @param {ListNode} head
- * @return {ListNode}
+ * @param {SinglyLinkedListNode} head
+ * @return {SinglyLinkedListNode}
  */
-const iterative = (head: LinkedListNode): LinkedListNode => {
+const iterative = (head: SinglyLinkedListNode): SinglyLinkedListNode => {
   let prev = null
   let curr = cloneDeep(head)
 

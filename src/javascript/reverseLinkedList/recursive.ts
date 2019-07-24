@@ -1,12 +1,12 @@
-import LinkedListNode from '../util/LinkedListNode'
+import SinglyLinkedListNode from '../struct/SinglyLinkedListNode'
 import cloneDeep from '../util/cloneDeep'
 
 /**
- * @param {ListNode} head
+ * @param {SinglyLinkedListNode} head
  * @param {boolean} isRecursiveCall
- * @return {ListNode}
+ * @return {SinglyLinkedListNode}
  */
-const recursive = (head: LinkedListNode, isRecursiveCall: boolean = false): LinkedListNode => {
+const recursive = (head: SinglyLinkedListNode, isRecursiveCall: boolean = false): SinglyLinkedListNode => {
   // 非递归调用做深拷贝, 防止改变原对象
   const curr = !isRecursiveCall ? cloneDeep(head) : head
 
@@ -14,7 +14,7 @@ const recursive = (head: LinkedListNode, isRecursiveCall: boolean = false): Link
     return curr
   }
 
-  const p: LinkedListNode = recursive(curr.next, true)
+  const p: SinglyLinkedListNode = recursive(curr.next, true)
 
   curr.next.next = curr
   curr.next = null
