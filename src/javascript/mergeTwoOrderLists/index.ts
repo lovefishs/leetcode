@@ -17,10 +17,13 @@ import recursive from './recursive'
  * @return {SinglyLinkedListNode}
  */
 const main = (l1: SinglyLinkedListNode, l2: SinglyLinkedListNode): SinglyLinkedListNode => {
+  console.log('l1', JSON.stringify(linkedListToArray(l1)))
+  console.log('l2', JSON.stringify(linkedListToArray(l2)))
+
   const list = iterative(l1, l2)
   // const list = recursive(l1, l2)
 
-  console.log(JSON.stringify(linkedListToArray(list)))
+  console.log('new list', JSON.stringify(linkedListToArray(list)))
   return list
 }
 
