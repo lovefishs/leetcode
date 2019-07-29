@@ -9,7 +9,7 @@ const arrayToLinkedList = (arr: any[]): SinglyLinkedListNode => {
   let curr = head
   let index = 1
 
-  while (arr[index]) {
+  while (index < arr.length) {
     curr.next = new SinglyLinkedListNode(arr[index])
     curr = curr.next
     index++
