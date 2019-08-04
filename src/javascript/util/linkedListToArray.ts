@@ -1,8 +1,11 @@
 import SinglyLinkedListNode from '../struct/SinglyLinkedListNode'
 
 const linkedListToArray = (head: SinglyLinkedListNode): any[] => {
-  const arr = []
+  if (head === null) {
+    return null
+  }
 
+  const arr = []
   let curr: SinglyLinkedListNode = head
 
   while (curr) {

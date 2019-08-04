@@ -1,8 +1,8 @@
 import SinglyLinkedListNode from '../struct/SinglyLinkedListNode'
 
-const arrayToLinkedList = (arr: any[]): SinglyLinkedListNode => {
+const arrayToLinkedList = (arr: any[]): null | SinglyLinkedListNode => {
   if (arr.length === 0) {
-    return new SinglyLinkedListNode(null)
+    return null
   }
 
   const head: SinglyLinkedListNode = new SinglyLinkedListNode(arr[0])
