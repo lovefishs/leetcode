@@ -51,7 +51,7 @@ const main = (root: SinglyLinkedListNode, k: number): SinglyLinkedListNode[] => 
   const partListSize = listLen / k
   let mod = listLen % k // 长度是否能整除, 不能的情况需要在链表前半段加长, 而得到的余数就是需要加长链表的段数
   let pre = null // 中间变量记录链尾, 用来断链
-  const ret = Array(k).fill(null) // 先填充后覆盖
+  const ret: SinglyLinkedListNode[] = Array(k).fill(null) // 先填充后覆盖
   curr = root
 
   for (let i = 0; i < listLen && curr; i++) {
