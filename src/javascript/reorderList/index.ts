@@ -42,10 +42,10 @@ const main = (head: SinglyLinkedListNode): SinglyLinkedListNode => {
   // 不断取出和向后移动头节点
   // 并将头节点连接到新头节点后面
   while (head2.next !== null) {
-    next = head2.next
-    head2.next = next.next
-    next.next = curr
-    curr = next
+    next = head2.next // 保存当前头结点的下个节点
+    head2.next = next.next // 将当前头结点的下一个节点指向“上一个节点”，这一步是实现了反转
+    next.next = curr // 将当前头结点设置为“上一个节点”
+    curr = next // 将保存的下一个节点设置为头结点
   }
   head2 = curr
 
